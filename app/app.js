@@ -27,19 +27,22 @@ app.config(function ($routeProvider) {
         .when('/customers',
             {
                 controller: 'CustomersController',
-                templateUrl: '/app/partials/customers.html'
+                //templateUrl: '/app/partials/customers.html'
+                templateUrl: 'http://localhost/angularjs-fundamentals-in-60-mins/app/partials/customers.html'
             })
         //Define a route that has a route parameter in it (:customerID)
         .when('/customerorders/:customerID',
             {
                 controller: 'CustomerOrdersController',
-                templateUrl: '/app/partials/customerOrders.html'
+                //templateUrl: '/app/partials/customerOrders.html'
+                templateUrl: 'http://localhost/angularjs-fundamentals-in-60-mins/app/partials/customerOrders.html'
             })
         //Define a route that has a route parameter in it (:customerID)
         .when('/orders',
             {
                 controller: 'OrdersController',
-                templateUrl: '/app/partials/orders.html'
+                //templateUrl: '/app/partials/orders.html'
+                templateUrl: 'http://localhost/angularjs-fundamentals-in-60-mins/app/partials/orders.html'
             })
         .otherwise({ redirectTo: '/customers' });
 });
